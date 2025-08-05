@@ -75,5 +75,5 @@ jobs:
         with:
           app-name: 'dancelife-dev-nodejs'
           slot-name: 'Production'
-          package: .
+          package: './build'
           
