@@ -62,9 +62,9 @@ jobs:
         with:
           name: node-app
 
-      - name: Install dependencies in build folder
-        run: |
-          cd build && npm install && cd ..
+      # - name: Install dependencies in build folder
+      #   run: |
+      #     cd build && npm install && cd ..
       
       - name: Login to Azure
         uses: azure/login@v2
