@@ -12,7 +12,7 @@ on:
 # Default env to pass test run during deployment
 env:
   TZ: UTC
-  PORT: 3333
+  PORT: 80
   HOST: localhost
   LOG_LEVEL: info
   APP_KEY: testtesttesttest
@@ -61,10 +61,6 @@ jobs:
         uses: actions/download-artifact@v4
         with:
           name: node-app
-
-      # - name: Install dependencies in build folder
-      #   run: |
-      #     cd build && npm install && cd ..
       
       - name: Login to Azure
         uses: azure/login@v2
